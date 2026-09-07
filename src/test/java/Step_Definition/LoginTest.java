@@ -30,7 +30,7 @@ public class LoginTest extends BaseClass {
 	public void veify_the_login_status() {
 		DashboardPage dashboard_obj = new DashboardPage(getDriver());
 		dashboard_obj.verify_login();
-		System.out.println("Login verification completed");
+		System.out.println("Login verification completed successfully");
 	}
 
 }
