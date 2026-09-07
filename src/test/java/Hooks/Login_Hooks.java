@@ -23,7 +23,11 @@ public class Login_Hooks extends BaseClass {
 	@Before ("@login")
 	public void start_browser() throws InterruptedException {
 		EdgeOptions option = new EdgeOptions();
-		option.addArguments("--start-maximized");
+		option.addArguments("--headless=new");
+		option.addArguments("--disable-gpu");
+		option.addArguments("--window-size=1920,1080");
+		
+		
 		setDriver(new EdgeDriver(option));
 		getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
