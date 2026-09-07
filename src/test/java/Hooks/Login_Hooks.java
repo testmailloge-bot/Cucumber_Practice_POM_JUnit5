@@ -26,6 +26,10 @@ public class Login_Hooks extends BaseClass {
 		option.addArguments("--headless=new");
 		option.addArguments("--disable-gpu");
 		option.addArguments("--window-size=1920,1080");
+		option.addArguments("--no-sandbox");
+		option.addArguments("--disable-dev-shm-usage");
+		option.addArguments("--disable-extensions");
+		option.addArguments("--user-data-dir=C:\\Windows\\Temp\\JenkinsEdgeProfile");
 		
 		
 		setDriver(new EdgeDriver(option));
