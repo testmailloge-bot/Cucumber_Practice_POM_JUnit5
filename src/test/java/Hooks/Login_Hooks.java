@@ -39,6 +39,9 @@ public class Login_Hooks extends BaseClass {
 			String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 			String file_name = scenario_name + "_" + timeStamp + ".png";
 			File file_destination = new File("target/Screenshots/"+file_name);
+			if (!file_destination.exists()) {
+				file_destination.mkdirs();
+			}
 			FileHandler.copy(source,file_destination);
 			
 		}
