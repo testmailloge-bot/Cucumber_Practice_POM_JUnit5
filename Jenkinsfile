@@ -22,4 +22,9 @@ pipeline {
             }
         }
     }
+    post {
+    always {
+        junit 'target/Cucumber_Reports/report.xml'
+    }
+}
 }
