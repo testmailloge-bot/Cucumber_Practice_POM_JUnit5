@@ -32,7 +32,7 @@ public class LoginTest extends BaseClass {
 		dashboard_obj.verify_login();
 
 		System.out.println("Login verification completed successfully");
-		throw new AssertionError("Intentional failure for Jenkins practice");
+		
 
 	}
 
