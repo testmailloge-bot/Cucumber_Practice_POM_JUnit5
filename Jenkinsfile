@@ -25,6 +25,8 @@ pipeline {
     post {
     always {
         junit 'target/Cucumber_Reports/report.xml'
+        archiveArtifacts artifacts: 'target/Screenshots/*.png',
+                             allowEmptyArchive: true
     }
 }
 }
