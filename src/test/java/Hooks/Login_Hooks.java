@@ -23,13 +23,7 @@ public class Login_Hooks extends BaseClass {
 	@Before ("@login")
 	public void start_browser() throws InterruptedException {
 		EdgeOptions option = new EdgeOptions();
-		option.addArguments("--headless=new");
-		option.addArguments("--disable-gpu");
-		option.addArguments("--window-size=1920,1080");
-		option.addArguments("--no-sandbox");
-		option.addArguments("--disable-dev-shm-usage");
-		option.addArguments("--disable-extensions");
-		option.addArguments("--user-data-dir=C:\\Windows\\Temp\\JenkinsEdgeProfile");
+		option.addArguments("--start-maximized");
 		
 		
 		setDriver(new EdgeDriver(option));
