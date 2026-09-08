@@ -6,7 +6,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                eecho 'Running SDET Pipeline'
+                echo 'Running SDET Pipeline'
             }
         }
 
